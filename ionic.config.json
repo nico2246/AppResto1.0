@@ -1,0 +1,7 @@
+{
+  "name": "AppResto",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
