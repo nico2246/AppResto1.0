@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'menu-app',
+    loadChildren: () => import('./menu-app/menu-app.module').then( m => m.MenuAppPageModule)
+  },
 ];
 
 @NgModule({
