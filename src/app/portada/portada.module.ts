@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MenuAppPageRoutingModule } from './menu-app-routing.module';
+import { PortadaPageRoutingModule } from './portada-routing.module';
 
-import { MenuAppPage } from './menu-app.page';
+import { PortadaPage } from './portada.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    MenuAppPageRoutingModule
+    PortadaPageRoutingModule
   ],
-  declarations: [MenuAppPage]
+  declarations: [PortadaPage]
 })
-export class MenuAppPageModule {}
+export class PortadaPageModule {}

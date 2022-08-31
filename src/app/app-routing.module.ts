@@ -8,13 +8,10 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'portada',
     pathMatch: 'full'
   },
-  {
-    path: 'menu-app',
-    loadChildren: () => import('./menu-app/menu-app.module').then( m => m.MenuAppPageModule)
-  },
+  
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)  
@@ -22,9 +19,15 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'menu-app',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'portada',
+    loadChildren: () => import('./portada/portada.module').then( m => m.PortadaPageModule)
+  },
+
+  
 ];
 
 @NgModule({

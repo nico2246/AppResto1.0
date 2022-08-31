@@ -20,7 +20,7 @@ export class LoginPage implements OnInit {
         usuario: this.usuario
       }  
   };
-  this.router.navigate(['/menu-app'],navigationExtras);
+  this.router.navigate(['/'],navigationExtras);
 
  }
 }
