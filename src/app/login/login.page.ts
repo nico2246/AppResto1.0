@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router, NavigationExtras } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
-  constructor() { }
+  usuario = ""
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
+  ingresar(){
 
+    let navigationExtras: NavigationExtras = {
+      state: {
+        usuario: this.usuario
+      }  
+  };
+  this.router.navigate(['/menu-app'],navigationExtras);
+
+ }
 }
