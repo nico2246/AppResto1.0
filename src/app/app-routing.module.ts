@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'portada',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   
@@ -17,11 +17,7 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)  
   
   },
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
+ 
   {
     path: 'portada',
     loadChildren: () => import('./portada/portada.module').then( m => m.PortadaPageModule)

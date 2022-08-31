@@ -1,15 +1,27 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Menu</ion-title>
+    <ion-title>Menu </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
   <div class="">
-    <ion-label >Hola {{nUsuario.usuario}}</ion-label>
+    <ion-label >Hola </ion-label>
   </div>
-
+  <ion-card>
+    <!-- Contenido de un Card -->
+    <ion-card-content>
+      <ion-item lines="none">
+        <!-- {{interpolacion}} 
+          Permite mostrar los datos desde el script a la visual
+          verificar el data en el home.page.ts
+        -->
+        <ion-label >Usuario: {{nUsuario.usuario}}</ion-label>
+      </ion-item>
+    </ion-card-content>
+    <!-- Contenido de un Card -->
+  </ion-card>
   <ion-card>
     <ion-item>
       <ion-label>Ají de gallina con arroz graneado</ion-label>
